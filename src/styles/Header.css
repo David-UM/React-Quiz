@@ -5,13 +5,25 @@
     padding: 0.4rem;
   }
 
-header {
+  header {
     width: 100%;
     height: 50px;
     background-color: #1b1b32;
     display: flex;
- }
- h1 {
-    color: #f1be32;
-    font-size: min(5vw, 1.2em)
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  
   }
+
+
+h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+
+main {
+  padding-top: 50px;
+}
