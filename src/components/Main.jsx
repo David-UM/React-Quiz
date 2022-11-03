@@ -11,15 +11,15 @@ const Main = () => {
 					<section role='region' aria-labelledby='student-info'>
 						<h2 id='student-info'>Student Info</h2>
 						<div className='info'>
-							<label for='name'>Name:</label>
+							<label htmlFor='name'>Name:</label>
 							<input name='student-info' id='name' type='text'></input>
 						</div>
 						<div className='info'>
-							<label for='email'>Email:</label>
+							<label htmlFor='email'>Email:</label>
 							<input name='student-email' id='email' type='email'></input>
 						</div>
 						<div className='info'>
-							<label for='date'>
+							<label htmlFor='date'>
 								D.O.B.: <span className='sr-only'>(Date of Birth)</span>
 							</label>
 							<input name='birthday' id='date' type='date'></input>
@@ -31,9 +31,9 @@ const Main = () => {
 							<p>1</p>
 							<fieldset name='1' className='question'>
 								<legend>yes/no</legend>
-								<ul className='question'>
+								<ul className='answers-list'>
 									<li>
-										<label for='q1-a1'>
+										<label htmlFor='q1-a1'>
 											<input
 												name='q2'
 												value='True'
@@ -44,7 +44,7 @@ const Main = () => {
 										</label>
 									</li>
 									<li>
-										<label for='q1-a2'>
+										<label htmlFor='q1-a2'>
 											<input
 												name='q2'
 												value='False'
@@ -61,9 +61,9 @@ const Main = () => {
 							<p>1</p>
 							<fieldset name='2' className='question'>
 								<legend>true/false</legend>
-								<ul className='question'>
+								<ul className='answers-list'>
 									<li>
-										<label for='q2-a1'>
+										<label htmlFor='q2-a1'>
 											<input
 												name='q1'
 												value='True'
@@ -74,7 +74,7 @@ const Main = () => {
 										</label>
 									</li>
 									<li>
-										<label name='q2' for='q2-a2'>
+										<label name='q2' htmlFor='q2-a2'>
 											<input
 												name='q1'
 												value='False'
@@ -92,7 +92,7 @@ const Main = () => {
 						<h2 id='css-questions'>CSS</h2>
 						<div className='formrow'>
 							<div className='question-block'>
-								<label for='customer'>Are you a frontend developer?</label>
+								<label htmlFor='customer'>Are you a frontend developer?</label>
 							</div>
 							<div className='answer'>
 								<select name='customer' id='customer' required>
@@ -102,7 +102,9 @@ const Main = () => {
 								</select>
 							</div>
 							<div className='question-block'>
-								<label for='css-questions'>Do you have any questions:</label>
+								<label htmlFor='css-questions'>
+									Do you have any questions:
+								</label>
 							</div>
 							<div className='answer'>
 								<textarea
