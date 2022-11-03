@@ -6,15 +6,22 @@ const Nav = () => {
 			<nav>
 				<ul>
 					<li>
-						<a href='#student-info'>INFO</a>
+						<a acceskey='a' href='#student-info'>
+							INFO
+						</a>
 					</li>
 					<li>
-						<a href='#html-questions'>HTML</a>
+						<a acceskey='h' href='#html-questions'>
+							HTML
+						</a>
 					</li>
 					<li>
-						<a href='#css-questions'>CSS</a>
+						<a acceskey='c' href='#css-questions'>
+							CSS
+						</a>
 					</li>
 				</ul>
+				acceskey=""
 			</nav>
 		</>
 	);
